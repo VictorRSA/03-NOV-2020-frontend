@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="Author" content="Victor NKuna">
+    <meta http-equiv="refresh" content="200">
+    <link rel="javaScript" href="index.js" type="JavaScript/text">
+    <link rel="stylesheet" href="index.css" type="css/text">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.1.1.js">
+    </script>
+
+    <title>index page</title>
+</head>
+
+<body style="display: flexbox;">
+    <table border="5" class =table-class>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>Four</td>
+        </tr>
+    </table>
+    <div id="content">
+    <P style="background-color: chartreuse;">jquery is <b>fun</b></P>
+    <p style="background-color: darkturquoise;">The journey of becoming a fullstack</p>
+
+    </div>
+    
+    <br />
+    <div class="images">
+        <img src="/home/admin-lc/Frontend-web-development/images.jpeg" height=25% width="25%"  alt="_blank image" >
+
+
+    </div>
+   
+    <script>
+        $(document).live("pageload",function(){
+            let container = maxWidth = $(".content").width();
+            $(".content img").css("max-with",maxWidth );
+            $(".content img ").css ("height",auto);
+
+        });
+        $(function(){
+            let val =$("p").html("If one wants to make a SPA is must know to learn Jquery and make javascript assynchronous ka AJAX");
+            alert(val);
+        });
+
+        $(function(){
+          let x=  $("#content").text("<p>Jquery gave birth to modern single application apps as we know it,so it is of utmost importance to  master the JavaScript LIbrary to manipulate content of HTML and CSS websites apps.</p>S")
+          alert(x)
+        });;
+         //when you write js,you can include html tags inside your JavaScript
+
+    </script> 
+    <a   href="https://goofy-carson-95b66d.netlify.app/" style="background-color: steelblue;text-align:left;">victors' html and css end of module projects/a>
+</body>
+</html>
